@@ -24,7 +24,7 @@ export default () => {
     perPgae: number = 20,
     fields: string = "author,id,excerpt,title,link,slug,date"
   ) {
-    return get(ApiRoutes.posts.index(page, perPgae, category));
+    return get(ApiRoutes.posts.index(page, perPage, category));
   }
 
   async function getPost(slug: string) {
